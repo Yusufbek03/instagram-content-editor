@@ -1,8 +1,8 @@
 interface:
   display_name: Instagram — контент и бизнес
-  short_description: '20 режимов: контент, услуги, продажи и подключения'
+  short_description: 'Анализ по @username, контент и отдельный OAuth'
   default_prompt: 'Используй $instagram-content-editor как основной навык для моего
-    блога: определи цель и подготовь следующий практический шаг.'
+    блога. Если я дал ссылку или @username, прочитай доступные публичные данные и ответь по задаче; обозначь недоступное.'
   icon_small: assets/icon.svg
   icon_large: assets/icon.svg
 policy:
