@@ -1,0 +1,14 @@
+interface:
+  display_name: Instagram — контент и бизнес
+  short_description: '20 режимов: контент, услуги, продажи и подключения'
+  default_prompt: 'Используй $instagram-content-editor как основной навык для моего
+    блога: определи цель и подготовь следующий практический шаг.'
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  allow_implicit_invocation: true
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
