@@ -1,0 +1,47 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "instagram-content-editor",
+  "version": "2.2.0",
+  "description": "Разбор доступных данных Instagram по ссылке или @username, сценарии Reels и контент-планы прямо в ChatGPT. Без локальной установки Python и ключей API.",
+  "author": {
+    "name": "Yusufbek",
+    "url": "https://github.com/Yusufbek03"
+  },
+  "homepage": "https://github.com/Yusufbek03/instagram-content-editor",
+  "repository": "https://github.com/Yusufbek03/instagram-content-editor",
+  "keywords": [
+    "instagram",
+    "content",
+    "reels",
+    "russian",
+    "uzbek"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Instagram Content Editor",
+        "shortDescription": "Профиль, Reels и контент-план",
+        "longDescription": "Независимый помощник для анализа Instagram и подготовки контента. Укажите ссылку или @username, задайте вопрос или приложите материалы. Использует доступные инструменты ChatGPT; если Instagram ограничивает чтение, работает по скриншотам и текстам. Не получает скрытые Insights по ссылке, не авторизует Instagram и ничего не публикует. Пакет не требует Python, API-ключа или Meta app от пользователя. Доступность инструментов определяется аккаунтом ChatGPT.",
+        "developerName": "Yusufbek",
+        "category": "Productivity",
+        "capabilities": [
+          "Read"
+        ],
+        "websiteURL": "https://github.com/Yusufbek03/instagram-content-editor",
+        "supportURL": "https://github.com/Yusufbek03/instagram-content-editor/issues",
+        "defaultPrompt": [
+          "Разбери мой Instagram: вот ссылка или @username.",
+          "Подготовь три сценария Reels по моей теме.",
+          "Составь контент-план на неделю по моим материалам."
+        ],
+        "brandColor": "#C13584",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon.svg"
+      },
+      "onboardingSkill": "./skills/instagram-get-started/SKILL.md",
+      "publication": {
+        "release_notes": "Версия для установки в ChatGPT. Начало по ссылке или @username без локального Python и ключей. Только доступные источники, без обещания скрытых Insights."
+      }
+    }
+  }
+}
